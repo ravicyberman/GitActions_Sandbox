@@ -12,10 +12,14 @@ jobs:
         uses: tj-actions/changed-files@v12
         with:
           separator: ","
-      - name: Power BI Workspace Deploy
+      - name: Power BI Workspace Deploy #the following are being passed to Power-BI-Workspace-Deploy
         uses: nathangiusti/Power-BI-Workspace-Deploy@v2.2
         with:
           files: ${{ steps.changed-files.outputs.all_modified_files }}
+          source-stage-order: 0  #
+
+
+          
         env:
           CLIENT_ID: ${{ secrets.NON_PROD_SPN_ID }}
           CLIENT_SECRET: ${{ secrets.NON_PROD_SPN_SECRET }}

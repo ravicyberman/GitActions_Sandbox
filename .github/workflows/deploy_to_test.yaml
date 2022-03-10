@@ -16,7 +16,7 @@ jobs:
         uses: nathangiusti/Power-BI-Workspace-Deploy@v2.2
         with:
           files: ${{ steps.changed-files.outputs.all_modified_files }}
-          source-stage-order: 0  #
+          source-stage-order: 0  
 
 
           

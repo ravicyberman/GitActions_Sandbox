@@ -12,8 +12,8 @@ jobs:
         uses: tj-actions/changed-files@v12
         with:
           separator: ","
-      - name: Power BI Workspace Deploy #the following are being passed to Power-BI-Workspace-Deploy
-        uses: nathangiusti/Power-BI-Workspace-Deploy@v2.2
+      - name: Power BI Pipeline Deploy #the following are being passed to Power-BI-Pipeline-Deploy
+        uses: nathangiusti/Power-BI-Pipeline-Deploy@v2.2
         with:
           files: ${{ steps.changed-files.outputs.all_modified_files }}
           source-stage-order: 0  

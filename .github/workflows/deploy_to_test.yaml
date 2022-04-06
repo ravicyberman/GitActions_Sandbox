@@ -18,8 +18,8 @@ jobs:
           files: ${{ steps.changed-files.outputs.all_modified_files }}
           source-stage-order: 0
           tenant_id: "cef04b19-7776-4a94-b89b-375c77a8f936"
-          update-app-in-targetWorkspace:  True
-          allow-purgeData:  False      
+          update-app-in-targetWorkspace: True
+          allow-purgeData: False      
 
 
           

@@ -13,7 +13,7 @@ jobs:
         with:
           separator: ","
       - name: Power BI Pipeline Deploy #the following are being passed to Power-BI-Pipeline-Deploy
-        uses: nathangiusti/Power-BI-Pipeline-Deploy@v2.3
+        uses: nathangiusti/Power-BI-Pipeline-Deploy@v2.4
         with:
           files: ${{ steps.changed-files.outputs.all_modified_files }}
           source-stage-order: 0

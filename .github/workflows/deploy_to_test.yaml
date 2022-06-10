@@ -13,13 +13,14 @@ jobs:
         with:
           separator: ","
       - name: Power BI Pipeline Deploy #the following are being passed to Power-BI-Pipeline-Deploy
-        uses: nathangiusti/Power-BI-Pipeline-Deploy@v2.4
+        uses: nathangiusti/Power-BI-Pipeline-Deploy@main
         with:
-          files: ${{ steps.changed-files.outputs.all_modified_files }}
-          source_stage_order: 0
-          tenant_id: "cef04b19-7776-4a94-b89b-375c77a8f936"
-          update_app_in_target_workspace: True
-          allow_purge_data: False      
+          tenant_id: cef04b19-7776-4a94-b89b-375c77a8f936
+          config_file: .github/config/deploy_config.yaml
+          source_stage_order: 1
+         
+            
+    
 
 
           
